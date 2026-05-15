@@ -112,6 +112,11 @@
     padding: 25px 50px;
     margin-top: 100px;
   }
+  @media (max-width: 768px) {
+    .trending-container{
+      padding: 25px 20px;
+    }
+  }
   .trending-container span{
    color:rgb(250, 65, 65);
    text-transform:uppercase;
