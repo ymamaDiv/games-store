@@ -130,6 +130,15 @@
     justify-content: space-between;
     gap: 17px;
   }
+  @media (max-width: 768px){
+    .trending-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 17px;
+  }
+  }
+
   .trending-cards img{
     width: 300px;
      border-radius: 20px 20px 0px 0px;
