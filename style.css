@@ -89,7 +89,7 @@
   @media (max-width: 768px) {
     .landing-page{
       max-width: 100%;
-      gap: 20px;
+      
     }
   }
   .landing-page-search input{
