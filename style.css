@@ -112,7 +112,7 @@
     padding: 25px 50px;
     margin-top: 100px;
   }
-  @media (max-width: 768px) {
+   @media (max-width: 768px) {
     .trending-container{
       padding: 25px 20px;
     }
@@ -159,8 +159,13 @@
     background-color: rgb(223, 222, 222);
     padding: 5px 25px;
     align-items: center;
-     border-radius: 0px 0px 20px 20px;
+    border-radius: 0px 0px 20px 20px;
     
+  }
+ @media (max-width: 768px) {
+    .card-info {
+      padding: 5px 5px;
+    }
   }
   .card-info img {
    width: 45px;
@@ -172,6 +177,11 @@
     margin-top: 120px;
     
   } 
+  @media (max-width: 768px) {
+    .mostContainer{
+      padding: 15px 20px;
+    }
+  }
   .mostPlayed span{
    color:red;
    text-transform:uppercase;
@@ -234,14 +244,16 @@
     align-items: center;
     gap: 23px;
   }
-  @media (max-width: 768px) {
+    @media (max-width: 768px) {
     .topCardsContainer{
+      padding-top: 15px;
+      padding-bottom: 15px;
       display: flex;
       flex-direction:column;
       align-items: center;
       gap: 10px;
-      background-color: rgb(26, 138, 243);
-      border-raduios: 20px;
+      background-color: rgb(223, 222, 222); 
+      border-radius: 20px;
     }
   }
    .cardTopTitle{
