@@ -15,8 +15,9 @@
     }
      @media (max-width: 768px) {
     .header{
+      margin: auto;
       flex-direction: column;
-      gap: 15px;
+      gap: 10px;
     }
   }
   .header img{
