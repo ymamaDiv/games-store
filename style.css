@@ -130,14 +130,13 @@
     justify-content: space-between;
     gap: 17px;
   }
-  @media (max-width: 768px){
+  @media (max-width: 768px) {
     .trending-cards{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 17px;
+      flex-direction: column;
+      align-items: center;
+    }
   }
-  }
+  
 
   .trending-cards img{
     width: 300px;
@@ -189,6 +188,14 @@
     align-items: center;
     
   }
+ @media (max-width: 768px) {
+    .mostCards{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+    }
+  } 
   .mostCards .cardInfo{
     display: flex;
     flex-direction: column;
@@ -222,14 +229,13 @@
     align-items: center;
     gap: 23px;
   }
-  @media (max-width: 768px){
-     .topCardsContainer{
-    display:flex;
-    flex-direcrion:column;
-    justify-content: center;
-    align-items: center;
-    gap: 23px;
-  }
+  @media (max-width: 768px) {
+    .topCardsContainer{
+      display: flex;
+      flex-direction:column;
+      align-items: center;
+      gap: 5px;
+    }
   }
    .cardTopTitle{
    background-color: rgb(26, 138, 243);
