@@ -17,7 +17,9 @@
     .header{
       margin: auto;
       flex-direction: column;
-      gap: 10px;
+      gap: 8px;
+      padding-lft:8px;
+      padding-right:8px;
     }
   }
   .header img{
