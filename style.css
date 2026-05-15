@@ -18,7 +18,7 @@
       margin: auto;
       flex-direction: column;
       padding-left:5px;
-      padding-right:8px;
+      padding-right:5px;
     }
   }
   .header img{
@@ -46,6 +46,7 @@
     text-decoration: none; 
     color:white;
     padding: 3px 8px;
+    padding-right: 10px;
     border-radius: 15px;
     transition: background 2s, button 8s;
   }
