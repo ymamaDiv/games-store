@@ -45,7 +45,7 @@
    .mnue >a {
     text-decoration: none; 
     color:white;
-    padding: 3px 8px;
+    padding: 3px 5px;
     padding-right: 10px;
     border-radius: 15px;
     transition: background 2s, button 8s;
@@ -86,12 +86,11 @@
    border-radius: 20px;
    box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.5);
   }
-  @media (max-width: 768px){
-    .landing-page img{
-   max-width: 100%;
-   border-radius: 20px;
-   box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.5);
-  }
+  @media (max-width: 768px) {
+    .landing-page{
+      max-width: 100%;
+      gap: 20px;
+    }
   }
   .landing-page-search input{
    border-radius: 50px;
@@ -162,11 +161,7 @@
     border-radius: 0px 0px 20px 20px;
     
   }
- @media (max-width: 768px) {
-    .card-info {
-      padding: 5px 5px;
-    }
-  }
+ 
   .card-info img {
    width: 45px;
   }
@@ -191,6 +186,11 @@
   }
   .mostHeader button{
     margin-bottom: 10px;
+  }
+@media (max-width: 768px) {
+    .mostHeader button{     
+       margin-bottom: 15px;
+    }
   }
   .mostHeader{
     display: flex;
