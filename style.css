@@ -17,13 +17,17 @@
     .header{
       margin: auto;
       flex-direction: column;
-      
       padding-left:5px;
       padding-right:5px;
     }
   }
   .header img{
     width: 150px;
+  }
+  @media (max-width: 768px) {
+    .header img{
+    max-width: 100%;
+  }
   }
   .mnue {
     display: flex;
@@ -37,6 +41,15 @@
     border-radius: 15px;
     transition: background 2s, button 8s;
   }
+ @media (max-width: 768px){
+   .mnue >a {
+    text-decoration: none; 
+    color:white;
+    padding: 3px 8px;
+    border-radius: 15px;
+    transition: background 2s, button 8s;
+  }
+ }
   .mnue >a:hover{
     background-color: rgb(116, 188, 255); 
     transition: 1s;
