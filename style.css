@@ -213,6 +213,15 @@
     align-items: center;
     gap: 23px;
   }
+  @media (max-width: 768px){
+     .topCardsContainer{
+    display:flex;
+    flex-direcrion:column;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+  }
+  }
    .cardTopTitle{
    background-color: rgb(26, 138, 243);
    border-radius: 20px;
