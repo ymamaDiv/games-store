@@ -239,7 +239,9 @@
       display: flex;
       flex-direction:column;
       align-items: center;
-      gap: 5px;
+      gap: 10px;
+      background-color: rgb(26, 138, 243);
+      border-raduios: 20px;
     }
   }
    .cardTopTitle{
