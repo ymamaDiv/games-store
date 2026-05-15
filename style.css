@@ -17,7 +17,7 @@
     .header{
       margin: auto;
       flex-direction: column;
-      gap: 3px;
+      gap: 13px;
       padding-left:5px;
       padding-right:5px;
     }
