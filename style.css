@@ -86,12 +86,12 @@
    border-radius: 20px;
    box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.5);
   }
-  @media (max-width: 768px) {
-    .landing-page{
-      max-width: 100%;
-      
-    }
-  }
+ @media (max-width:768px){
+   .landing-page img{
+      width:100%;
+      height:auto;
+   }
+}
   .landing-page-search input{
    border-radius: 50px;
    border:none;
