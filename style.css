@@ -76,6 +76,14 @@
     color:white;
     border-radius: 0 0 50px 50px;
   }
+@media (max-width: 768px) {
+    .landing-page{
+      flex-direction:column;
+      gap: 20px;
+         padding-left: 10px;
+         padding-right: 10px;
+    }
+  }
   .landing-page p{
    color:black;
    padding-top: 5px;
