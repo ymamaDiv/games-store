@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up — LUGX Store</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header" style="border-radius: 0px 0px 50px 50px;">
+    <a href="index.html"><img src="imgs/logo.png" alt="LUGX logo"></a>
+    <nav class="mnue">
+      <a href="index.html">Home</a>
+      <a href="#">Our Shop</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+      <span class="nav-auth" data-nav-auth></span>
+    </nav>
+  </header>
+
+  <main class="signup-main">
+    <div class="signup-card">
+      <span class="signup-label">Join LUGX</span>
+      <h1>Create Your Account</h1>
+      <p class="signup-subtitle">Sign up to save your games, track orders, and get exclusive deals.</p>
+
+      <form id="signup-form" class="signup-form" novalidate>
+        <div class="form-group">
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" name="fullName" placeholder="Your full name" required autocomplete="name">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email">
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="At least 8 characters" required minlength="8" autocomplete="new-password">
+        </div>
+
+        <div class="form-group">
+          <label for="confirmPassword">Confirm Password</label>
+          <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Repeat your password" required minlength="8" autocomplete="new-password">
+        </div>
+
+        <p id="form-message" class="form-message" role="alert" hidden></p>
+
+        <button type="submit" class="btn btn-submit" id="submit-btn">Create Account</button>
+      </form>
+
+      <p class="signup-footer-text">Already have an account? <a href="signin.html">Sign in</a></p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Made By Yamamah. All rights reserved.</p>
+    <div>
+      <a href="https://www.linkedin.com/in/yamama-alhmoud" target="_blank">LinkedIn</a>
+      <a href="https://ymamadiv.github.io/" target="_blank">GitHub</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </footer>
+
+  <script src="auth.js"></script>
+  <script src="signup.js"></script>
+</body>
+</html>
