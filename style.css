@@ -37,13 +37,14 @@
     gap: 15px;
     align-items: center;
   }
- @media (max-width: 768px){
-   .nav-auth {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+@media (max-width: 768px) {
+  .nav-auth {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
 }
- }
 
   .mnue >a {
     text-decoration: none; 
