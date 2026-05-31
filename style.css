@@ -38,13 +38,6 @@
     align-items: center;
   }
  @media (max-width: 768px) {
-  .mnue {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 12px;
-  }
-
   .nav-auth {
     display: flex;
     flex-direction: column;
