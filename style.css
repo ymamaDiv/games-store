@@ -37,12 +37,13 @@
     gap: 15px;
     align-items: center;
   }
-.nav-auth {
+ @media (max-width: 768px){
+   .nav-auth {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-
+ }
 
   .mnue >a {
     text-decoration: none; 
