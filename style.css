@@ -37,12 +37,29 @@
     gap: 15px;
     align-items: center;
   }
- @media (max-width: 768px) {
-  .nav-auth {
-    display: flex;
+.nav-auth {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .header {
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
+  }
+
+  .mnue {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .nav-auth {
     width: 100%;
+    justify-content: center;
+    margin-top: 10px;
   }
 }
   .mnue >a {
