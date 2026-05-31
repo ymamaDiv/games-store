@@ -37,7 +37,10 @@
     gap: 15px;
     align-items: center;
   }
-  
+  @media (max-width: 768px)
+   .mnue {
+    gap: 5px;
+  }
   .mnue >a {
     text-decoration: none; 
     color:white;
