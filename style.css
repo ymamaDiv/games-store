@@ -32,17 +32,19 @@
     width: 150px;
     
   }  
-  .mnue {
-    display: flex;
-    gap: 15px;
-    align-items: center;
-  }
-.menu-toggle {
+  .menu-toggle {
   display: none;
   background: none;
   border: none;
   font-size: 2rem;
   cursor: pointer;
+  color: #ffffff;
+}
+
+.mnue {
+  display: flex;
+  gap: 15px;
+  align-items: center;
 }
 
 @media (max-width: 768px) {
@@ -59,12 +61,14 @@
   .mnue {
     display: none;
     position: absolute;
-    top: 90px;
+    top: 80px;
     left: 0;
     width: 100%;
+    background-color: rgb(26, 138, 243);
     flex-direction: column;
-    background: rgb(26, 138, 243);
+    align-items: center;
     padding: 20px;
+    gap: 15px;
     z-index: 1000;
   }
 
