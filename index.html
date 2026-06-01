@@ -12,18 +12,18 @@
 </head>
   <body>
     <!-- header -->
-    <header class="header">
+     <header class="header">
       <a href="index.html"><img src="imgs/logo.png"></a>
-       <button class="menu-toggle" id="menuToggle">
-        ☰
-       </button>
-        <nav class="mnue">
-           <a href="index.html">Home</a>
-           <a href="#">Our Shop</a>
-           <a href="about.html">About Us</a>
-           <a href="contact.html">Contact Us</a>
-           <span class="nav-auth" data-nav-auth></span>
-       </nav>
+        <button class="menu-toggle" id="menuToggle">
+              ☰
+        </button>
+       <nav class="mnue" id="mainMenu">
+      <a href="index.html">Home</a>
+      <a href="#">Our Shop</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+     <span class="nav-auth" data-nav-auth></span>
+    </nav>
       
     </header>
 
@@ -295,14 +295,21 @@
      <!--END OF footer-->
 
     <script src="auth.js"></script>
+    <script>
     
-  <script>
-    const menuToggle = document.getElementById("menuToggle");
-    const mainMenu = document.getElementById("mainMenu");
+  const menuToggle = document.getElementById("menuToggle");
+  const mainMenu = document.getElementById("mainMenu");
 
-    menuToggle.addEventListener("click", () => {
-      mainMenu.classList.toggle("active");
-    });
+  menuToggle.addEventListener("click", () => {
+    mainMenu.classList.toggle("active");
+  });
+
+  document.querySelectorAll("#mainMenu a").forEach(link => {
+  link.addEventListener("click", () => {
+    mainMenu.classList.remove("active");
+  });
+});
+
   </script>
   </body>
 </html>
