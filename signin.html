@@ -11,16 +11,20 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="header" style="border-radius: 0px 0px 50px 50px;">
-    <a href="index.html"><img src="imgs/logo.png" alt="LUGX logo"></a>
-    <nav class="mnue">
+ <header class="header">
+      <a href="index.html"><img src="imgs/logo.png"></a>
+        <button class="menu-toggle" id="menuToggle">
+              ☰
+        </button>
+       <nav class="mnue" id="mainMenu">
       <a href="index.html">Home</a>
       <a href="#">Our Shop</a>
       <a href="about.html">About Us</a>
       <a href="contact.html">Contact Us</a>
-      <span class="nav-auth" data-nav-auth></span>
+     <span class="nav-auth" data-nav-auth></span>
     </nav>
-  </header>
+      
+    </header>
 
   <main class="signup-main">
     <div class="signup-card">
@@ -59,5 +63,20 @@
 
   <script src="auth.js"></script>
   <script src="signin.js"></script>
+  <script>
+      const menuToggle = document.getElementById("menuToggle");
+      const mainMenu = document.getElementById("mainMenu");
+
+      menuToggle.addEventListener("click", () => {
+        mainMenu.classList.toggle("active");
+      });
+
+      document.querySelectorAll("#mainMenu a").forEach(link => {
+      link.addEventListener("click", () => {
+        mainMenu.classList.remove("active");
+      });
+      });
+  </script>
+
 </body>
 </html>
